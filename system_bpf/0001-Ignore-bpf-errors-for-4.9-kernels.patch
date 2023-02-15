@@ -1,14 +1,15 @@
-From 3bbceb85c97c5da4067d56e258323bdcad4e56bb Mon Sep 17 00:00:00 2001
+From c63b00403e747ee63bb83b0c7682341d406679ae Mon Sep 17 00:00:00 2001
 From: SagarMakhar <sagarmakhar@gmail.com>
 Date: Sat, 10 Jul 2021 16:49:30 +0000
-Subject: [PATCH 1/2] Ignore bpf errors for < 4.9 kernels
+Subject: [PATCH] Ignore bpf errors for < 4.9 kernels
 
 Change-Id: I037e4745d5bde12e6edd35203d3d3604ef1ec4c2
 Signed-off-by: SagarMakhar <sagarmakhar@gmail.com>
 Signed-off-by: rajkale99 <kaleraj.rk@gmail.com>
 ---
- bpfloader/BpfLoader.cpp | 27 ++++++++++++++++-----------
- 1 file changed, 16 insertions(+), 11 deletions(-)
+ bpfloader/BpfLoader.cpp               | 27 ++++++++++++++++-----------
+ libbpf_android/include/bpf/BpfUtils.h |  4 ++++
+ 2 files changed, 20 insertions(+), 11 deletions(-)
 
 diff --git a/bpfloader/BpfLoader.cpp b/bpfloader/BpfLoader.cpp
 index 7a68894..788009e 100644
@@ -48,6 +49,28 @@ index 7a68894..788009e 100644
          }
      }
  
+diff --git a/libbpf_android/include/bpf/BpfUtils.h b/libbpf_android/include/bpf/BpfUtils.h
+index 8fd2a4a..b43dc32 100644
+--- a/libbpf_android/include/bpf/BpfUtils.h
++++ b/libbpf_android/include/bpf/BpfUtils.h
+@@ -16,6 +16,7 @@
+ 
+ #pragma once
+ 
++#include <android-base/properties.h>
+ #include <linux/if_ether.h>
+ #include <net/if.h>
+ #include <stdlib.h>
+@@ -40,6 +41,9 @@ int setrlimitForTest();
+ #define KVER(a, b, c) (((a) << 24) + ((b) << 16) + (c))
+ 
+ unsigned kernelVersion();
++inline bool isBpfSupported() {
++    return android::base::GetBoolProperty("ro.kernel.ebpf.supported", true);
++}
+ 
+ static inline bool isAtLeastKernelVersion(unsigned major, unsigned minor, unsigned sub) {
+     return kernelVersion() >= KVER(major, minor, sub);
 -- 
-2.17.1
+2.25.1
 
