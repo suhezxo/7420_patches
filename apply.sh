@@ -5,6 +5,9 @@ cd ../
 cd build/soong
 git am --signoff < ~/7420_patches-lineage-19.1/build_soong/0000-Allow-warnins-from-hardware.patch
 cd ../../
+cd external/perfetto
+git am --signoff < ~/7420_patches-lineage-19.1/external_perfetto/0001-perfetto-Conditionally-remove-version-check-for-memf.patch
+cd ../../
 cd frameworks/base
 git am --signoff < ~/7420_patches-lineage-19.1/frameworks_base/0001-BiometricScheduler-Cancel-operation-if-not-idle.patch
 git am --signoff < ~/7420_patches-lineage-19.1/frameworks_base/0002.patch
