@@ -1,4 +1,7 @@
 #!/bin/bash
+cd art
+git am --signoff < ~/7420_patches-lineage-19.1/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
+cd ../
 cd build/soong
 git am --signoff < ~/7420_patches-lineage-19.1/build_soong/0000-Allow-warnins-from-hardware.patch
 cd ../../
