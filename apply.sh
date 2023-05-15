@@ -41,4 +41,7 @@ cd ../../
 cd system/core
 git am --signoff < ~/patches-lineage-20.0/system_core/0001-Add-no-BPF-usecase-support.patch
 cd ../../
+cd vendor/lineage
+git am --signoff < ~/patches-lineage-20.0/system_core/0001-Disable-adb-secure.patch
+cd ../../
 
