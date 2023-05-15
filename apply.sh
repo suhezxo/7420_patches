@@ -5,6 +5,7 @@ git am --signoff < ~/patches-lineage-20.0/frameworks_libs_net/0001-Support-no-BP
 cd ../../../
 cd system/netd
 git am --signoff < ~/patches-lineage-20.0/system_netd/0001-Add-no-BPF-usecase-support.patch
+git am --signoff < ~/patches-lineage-20.0/system_netd/0002-netd-Allow-devices-to-force-add-directly-connected-r.patch
 cd ../../
 cd packages/modules/Connectivity
 git am --signoff < ~/patches-lineage-20.0/packages_modules_Connectivity/0001-Support-no-BPF-usecase.patch
