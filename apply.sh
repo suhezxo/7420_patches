@@ -27,6 +27,9 @@ cd ../../
 cd frameworks/base
 git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-BiometricScheduler-Cancel-operation-if-not-idle.patch
 cd ../../
+cd art
+git am --signoff < ~/patches-lineage-20.0/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
+cd ../
 cd system/core
 git am --signoff < ~/patches-lineage-20.0/system_core/0001-Add-no-BPF-usecase-support.patch
 cd ../../
