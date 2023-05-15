@@ -24,6 +24,9 @@ cd ../../
 cd frameworks/native
 git am --signoff < ~/patches-lineage-20.0/frameworks_native/0001-Disable-gpu-service.patch
 cd ../../
+cd frameworks/base
+git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-BiometricScheduler-Cancel-operation-if-not-idle.patch
+cd ../../
 cd system/core
 git am --signoff < ~/patches-lineage-20.0/system_core/0001-Add-no-BPF-usecase-support.patch
 cd ../../
