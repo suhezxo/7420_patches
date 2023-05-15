@@ -43,5 +43,7 @@ git am --signoff < ~/patches-lineage-20.0/system_core/0001-Add-no-BPF-usecase-su
 cd ../../
 cd vendor/lineage
 git am --signoff < ~/patches-lineage-20.0/system_core/0001-Disable-adb-secure.patch
+git am --signoff < ~/patches-lineage-20.0/system_core/0002-Revert-config-Remove-TARGET_NEEDS_NETD_DIRECT_CONNEC.patch
+git am --signoff < ~/patches-lineage-20.0/system_core/0003-Revert-config-Remove-TARGET_HAS_MEMFD_BACKPORT.patch
 cd ../../
 
