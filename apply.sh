@@ -30,6 +30,12 @@ cd ../../
 cd art
 git am --signoff < ~/patches-lineage-20.0/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
 cd ../
+cd build/soong
+git am --signoff < ~/patches-lineage-20.0/build_soong/0001-Allow-warnins-from-hardware.patch
+cd ../../
+cd external/perfetto
+git am --signoff < ~/patches-lineage-20.0/external_perfetto/0001-perfetto-Conditionally-remove-version-check-for-memf.patch
+cd ../../
 cd system/core
 git am --signoff < ~/patches-lineage-20.0/system_core/0001-Add-no-BPF-usecase-support.patch
 cd ../../
