@@ -1,12 +1,13 @@
-# LineageOS 20/Android 13 patches for Exynos 8890 support
-Just copy them to coresponding folder and git apply them (or git am --signoff < path/to/file.patch)
+# Exynos 7420 patches for LineageOS 20.0
+You must apply all of the patches in this repository in order for proper building and booting. 
 
-Patches here are used to make device without bpf boot and work properly (As of now there is no 3.18 eBPF port)
+Only validated to work on LineageOS 20.0 (as of May 2023)
 
-8895 can use system_security patch due to some keystore issues
+Extract files to ~/7420_patches-lineage-20.0. Copy apply.sh to the root of your lineage 20.0.
 
-Simplest way to apply patches is to clone this repo to ~/patches
-copy apply.sh script to root of your android source dir and run apply.sh
+Mark apply.sh as executable
+sudo chmod +x apply.sh
 
-you can use revert.sh script to build for 8895 devices after compiling 8890 builds which require 
-extra patches, this will only leave system/security patch applied
+Then run the apply.sh script. It should apply all of the patches you need
+
+These patches are required as android requires eBPF in the kernel, which has not yet been backported to 3.10 kernels, which is what we are using. Until that happens, patching is a requirement. 
