@@ -48,8 +48,8 @@ git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0003-wifi-
 git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0004-wifi-wifi.h-fix-build-undef-NAN.patch
 cd ../../../
 cd vendor/lineage
-git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0001-Disable-adb-secure.patch
-git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0002-Revert-config-Remove-TARGET_NEEDS_NETD_DIRECT_CONNEC.patch
-git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0003-Revert-config-Remove-TARGET_HAS_MEMFD_BACKPORT.patch
+git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0000-Disable-adb-secure.patch
+git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0001-Add-back-NETD_DIRECT_CONNECT_RULE.patch
+git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0002-Add-memfd-backport-back.patch
 cd ../../
 
