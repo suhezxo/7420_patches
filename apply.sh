@@ -27,7 +27,7 @@ git am --signoff < ~/patches-lineage-20.0/frameworks_native/0001-Disable-gpu-ser
 git am --signoff < ~/patches-lineage-20.0/frameworks_native/0002-Add-back-pre-S-createEventQueue-function.patch
 cd ../../
 cd frameworks/base
-git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-BiometricScheduler-Cancel-operation-if-not-idle.patch
+git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-Revert-fp-always-on-changes.patch
 cd ../../
 cd art
 git am --signoff < ~/patches-lineage-20.0/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
