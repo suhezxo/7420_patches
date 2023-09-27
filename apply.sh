@@ -42,14 +42,14 @@ cd system/core
 git am --signoff < ~/patches-lineage-20.0/system_core/0001-Add-no-BPF-usecase-support.patch
 cd ../../
 cd hardware/lineage/interfaces
-#git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0001-wifi-1.0-legacy-Add-provision-to-create-remove-dynam.patch
-#git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0002-wifi-fix-legacy-HIDL-for-T.patch
-#git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0003-wifi-hidl_struct_util.cpp-convertLegacyWifiChannelWi.patch
-#git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0004-wifi-wifi.h-fix-build-undef-NAN.patch
+git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0001-wifi-1.0-legacy-Add-provision-to-create-remove-dynam.patch
+git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0002-wifi-fix-legacy-HIDL-for-T.patch
+git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0003-wifi-hidl_struct_util.cpp-convertLegacyWifiChannelWi.patch
+git am --signoff < ~/patches-lineage-20.0/hardware_lineage_interfaces/0004-wifi-wifi.h-fix-build-undef-NAN.patch
 cd ../../../
 cd vendor/lineage
 git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0000-Disable-adb-secure.patch
 git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0001-Add-back-TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE.patch
-git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0002-0002-Add-back-TARGET_HAS_MEMFD_BACKPORT.patch
+git am --signoff < ~/patches-lineage-20.0/vendor_lineage/0002-Add-back-TARGET_HAS_MEMFD_BACKPORT.patch
 cd ../../
 
