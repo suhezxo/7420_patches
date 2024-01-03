@@ -31,6 +31,7 @@ git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-Revert-fp-always-
 cd ../../
 cd art
 git am --signoff < ~/patches-lineage-20.0/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
+git am --signoff < ~/patches-lineage-20.0/android_art/0002-Cache-operations-dont-segfault-on-our-kernel.patch
 cd ../
 cd build/soong
 git am --signoff < ~/patches-lineage-20.0/build_soong/0001-Allow-warnins-from-hardware.patch
