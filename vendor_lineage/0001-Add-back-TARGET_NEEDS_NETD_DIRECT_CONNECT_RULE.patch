@@ -14,10 +14,10 @@ Change-Id: Id7165c7037be75244235ff7a5be1c0ec3f3c0a32
  2 files changed, 19 insertions(+)
 
 diff --git a/build/soong/Android.bp b/build/soong/Android.bp
-index 74adabe2..715992ec 100644
+index 2029d7ec..b8f9f6e2 100644
 --- a/build/soong/Android.bp
 +++ b/build/soong/Android.bp
-@@ -204,6 +204,23 @@ trust_usb_control {
+@@ -221,6 +221,23 @@ trust_usb_control {
      },
  }
  
@@ -42,7 +42,7 @@ index 74adabe2..715992ec 100644
      name: "bootloader_message_offset",
      module_type: "cc_defaults",
 diff --git a/config/BoardConfigSoong.mk b/config/BoardConfigSoong.mk
-index 426da64b..a1e5a315 100644
+index 651d3372..e98e7531 100644
 --- a/config/BoardConfigSoong.mk
 +++ b/config/BoardConfigSoong.mk
 @@ -31,6 +31,7 @@ SOONG_CONFIG_lineageGlobalVars += \
@@ -50,10 +50,10 @@ index 426da64b..a1e5a315 100644
      additional_gralloc_10_usage_bits \
      bootloader_message_offset \
 +    needs_netd_direct_connect_rule \
+     camera_override_format_from_reserved \
      gralloc_handle_has_custom_content_md_reserved_size \
      gralloc_handle_has_reserved_size \
-     target_health_charging_control_charging_path \
-@@ -91,6 +92,7 @@ TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
+@@ -98,6 +99,7 @@ TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
  SOONG_CONFIG_lineageGlobalVars_aapt_version_code := $(shell date -u +%Y%m%d)
  SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
  SOONG_CONFIG_lineageGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
