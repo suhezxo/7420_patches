@@ -1,6 +1,8 @@
 #!/bin/bash
+
 cd art
 git am --signoff < ~/7420_patches-lineage-19.1/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
+git am --signoff < ~/7420_patches-lineage-19.1/android_art/0002-Cache-operations-dont-segfault-on-our-kernel.patch
 cd ../
 cd build/soong
 git am --signoff < ~/7420_patches-lineage-19.1/build_soong/0000-Allow-warnings-from-hardware.patch
