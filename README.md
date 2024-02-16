@@ -1,13 +1,16 @@
 # Exynos 7420 patches for LineageOS 19.1
-You must apply all of the patches if you want proper functionality on LineageOS (these patches have only been validated on lineage).
+Our device is legacy by current standards due to the old kernel that we are on. As a result, we require patches to achieve full performance and function.  
 
-You can apply all of the patches at once using the apply.sh script included. Just extract the patches to ~/7420_patches-lineage-19.1 and copy the apply.sh script to the LineageOS base directory. Run the script and it should apply all the patches for you.
+** THESE PATCHES ARE MANDATORY FOR BOOTING, YOU CANNOT JUST SKIP THEM. **
 
-If you need to update, hard reset all branches, resync with lineage, then run the script again.
+These patches are only validated to work on LineageOS 19.1 as of Feb 2024. Any other ROMs have not been tested.
 
-Minimum patches required for booting and building:
-system_bpf
-system_netd
-build_soong
+# Guide for applying
+1. Extract these patches into the home folder with the name "7420_patches-lineage-19.1"
+2. Copy the apply.sh script into the root of the android build directory.
+3. Mark the apply.sh script as executable 
 
-Using older unpatched kernels requires older build_soong patches. Look back in the commit history for that.
+```
+chmod +x apply.sh
+```
+4. Run the apply.sh script and apply all the patches
