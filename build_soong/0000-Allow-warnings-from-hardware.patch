@@ -1,7 +1,7 @@
 From 62b5b68a7cb68025b087144c1a273e470c384387 Mon Sep 17 00:00:00 2001
 From: Fakeman <55951275+fakemanoan@users.noreply.github.com>
 Date: Wed, 2 Nov 2022 10:55:02 +0000
-Subject: [PATCH] Allow warnins from hardware/
+Subject: [PATCH] Allow warnings from hardware/
 
 Fixes our build since samsung_slsi throws errors
 
