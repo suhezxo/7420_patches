@@ -38,6 +38,10 @@ cd frameworks/base
 echo "Applying patches to frameworks/base"
 git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-Revert-fp-always-on-changes.patch
 cd ../../
+cd frameworks/opt/telephony
+echo "Applying patches to frameworks/opt/telephony"
+git am --signoff < ~/patches-lineage-20.0/frameworks_opt_telephony/0001-2G-wants-proper-signal-strength-too.patch
+cd ../../../
 cd art
 echo "Applying patches to art"
 git am --signoff < ~/patches-lineage-20.0/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
