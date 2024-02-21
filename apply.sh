@@ -38,6 +38,10 @@ cd ../../
 cd frameworks/base
 echo "Applying patches to frameworks/base"
 git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-Revert-fp-always-on-changes.patch
+git am --signoff < ~/patches-lineage-20.0/frameworks_base/0001-Revert-CachedAppOptimizer-use-new-cgroup-api-for-fre.patch
+git am --signoff < ~/patches-lineage-20.0/frameworks_base/0002-Revert-CachedAppOptimizer-remove-native-freezer-enab.patch
+git am --signoff < ~/patches-lineage-20.0/frameworks_base/0003-Revert-CachedAppOptimizer-don-t-hardcode-freezer-pat.patch
+git am --signoff < ~/patches-lineage-20.0/frameworks_base/0004-CachedAppOptimizer-revert-freezer-to-cgroups-v1.patch
 cd ../../
 cd frameworks/opt/telephony
 echo "Applying patches to frameworks/opt/telephony"
@@ -59,6 +63,7 @@ cd ../../
 cd system/core
 echo "Applying patches to system/core"
 git am --signoff < ~/patches-lineage-20.0/system_core/0001-Add-no-BPF-usecase-support.patch
+git am --signoff < ~/patches-lineage-20.0/system_core/0002-Revert-libprocessgroup-switch-freezer-to-cgroup-v2.patch
 cd ../../
 cd hardware/lineage/interfaces
 echo "Applying patches to hardware/lineage/interfaces"
