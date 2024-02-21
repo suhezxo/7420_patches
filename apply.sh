@@ -12,6 +12,7 @@ cd ../../
 cd packages/modules/Connectivity
 echo "Applying patches to packages/modules/Connectivity"
 git am --signoff < ~/patches-lineage-20.0/packages_modules_Connectivity/0001-Support-no-BPF-usecase.patch
+git am --signoff < ~/patches-lineage-20.0/packages_modules_Connectivity/0002-Bring-back-traffic-indicators-for-legacy-devices.patch
 cd ../
 cd NetworkStack
 echo "Applying patches to NetworkStack"
