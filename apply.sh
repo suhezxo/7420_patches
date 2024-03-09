@@ -17,12 +17,8 @@ cd ../../
 cd frameworks/native
 git am --signoff < ~/7420_patches-lineage-19.1/frameworks_native/0001-Add-back-pre-S-createEventQueue-function.patch
 cd ../../
-cd frameworks/opt/telephony
-git am --signoff < ~/7420_patches-lineage-19.1/frameworks_opt_telephony/0001-2G-wants-proper-signal-strength-too.patch
-cd ../../../
 cd system/netd
 git am --signoff < ~/7420_patches-lineage-19.1/system_netd/0001-Revert-the-removal-of-non-BPF-network-traffic-monito.patch
-git am --signoff < ~/7420_patches-lineage-19.1/system_netd/0002-netd-Allow-devices-to-force-add-directly-connected-r.patch
 cd ../../
 cd hardware/libhardware
 git am --signoff < ~/7420_patches-lineage-19.1/hardware_libhardware/0001-keystore-hackup.patch
