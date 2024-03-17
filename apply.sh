@@ -7,7 +7,6 @@ cd ../../../
 cd system/netd
 echo "Applying patches to system/netd"
 git am --signoff < ~/patches-lineage-20.0/system_netd/0001-Add-no-BPF-usecase-support.patch
-git am --signoff < ~/patches-lineage-20.0/system_netd/0002-netd-Allow-devices-to-force-add-directly-connected-r.patch
 cd ../../
 cd packages/modules/Connectivity
 echo "Applying patches to packages/modules/Connectivity"
@@ -44,10 +43,6 @@ git am --signoff < ~/patches-lineage-20.0/frameworks_base/0002-Revert-CachedAppO
 git am --signoff < ~/patches-lineage-20.0/frameworks_base/0003-Revert-CachedAppOptimizer-don-t-hardcode-freezer-pat.patch
 git am --signoff < ~/patches-lineage-20.0/frameworks_base/0004-CachedAppOptimizer-revert-freezer-to-cgroups-v1.patch
 cd ../../
-cd frameworks/opt/telephony
-echo "Applying patches to frameworks/opt/telephony"
-git am --signoff < ~/patches-lineage-20.0/frameworks_opt_telephony/0001-2G-wants-proper-signal-strength-too.patch
-cd ../../../
 cd art
 echo "Applying patches to art"
 git am --signoff < ~/patches-lineage-20.0/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
