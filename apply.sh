@@ -26,6 +26,9 @@ cd ../../
 cd packages/modules/adb
 git am --signoff < ~/7420_patches-lineage-19.1/packages_modules_adb/0001-adb-Bring-back-support-for-legacy-FunctionFS.patch
 cd ../../../
+cd system/bt
+git am --signoff < ~/7420_patches-lineage-19.1/system_bt/0001-Revert-Bluetooth-HFP-Use-WBS-by-default-1-5.patch
+cd ../../
 cd system/bpf
 git am --signoff < ~/7420_patches-lineage-19.1/system_bpf/0001-Ignore-bpf-errors-for-4.9-kernels.patch
 git am --signoff < ~/7420_patches-lineage-19.1/system_bpf/0002-Bring-back-isBpfSupported-method-but-using-ro.kernel.patch
