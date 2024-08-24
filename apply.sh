@@ -4,9 +4,6 @@ cd art
 git am --signoff < ~/7420_patches-lineage-19.1/android_art/0001-art-Conditionally-remove-version-check-for-memfd_cre.patch
 git am --signoff < ~/7420_patches-lineage-19.1/android_art/0002-Cache-operations-dont-segfault-on-our-kernel.patch
 cd ../
-cd build/soong
-git am --signoff < ~/7420_patches-lineage-19.1/build_soong/0000-Allow-warnings-from-hardware.patch
-cd ../../
 cd external/perfetto
 git am --signoff < ~/7420_patches-lineage-19.1/external_perfetto/0001-perfetto-Conditionally-remove-version-check-for-memf.patch
 cd ../../
