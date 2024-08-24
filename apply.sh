@@ -36,6 +36,3 @@ cd ../../
 cd system/security
 git am --signoff < ~/7420_patches-lineage-19.1/system_security/0001-keystore-hackup.patch
 cd ../../
-cd vendor/lineage
-git am --signoff < ~/7420_patches-lineage-19.1/vendor_lineage/0001-Disable-adb-secure.patch
-cd ../../
